@@ -40,3 +40,4 @@ Route::get('/products', 'App\Http\Controllers\ProductController@index')->name("p
 Route::get('/products/create', 'App\Http\Controllers\ProductController@create')->name("product.create");
 Route::post('/products/save', 'App\Http\Controllers\ProductController@save')->name("product.save");
 Route::get('/products/{id}', 'App\Http\Controllers\ProductController@show')->name("product.show");
+Route::view('/product/created', 'product.created')->name('product.created');
