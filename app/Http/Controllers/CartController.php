@@ -16,7 +16,6 @@ class CartController extends Controller
         $products[15] = ['name' => 'Iphone 12', 'price' => '3000'];
         $products[18] = ['name' => 'Iphone 13', 'price' => '4000'];
 
-
         $cartProducts = [];
         $cartProductData = $request->session()->get('cart_product_data'); //we get the products stored in session
         if ($cartProductData) {
